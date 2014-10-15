@@ -3,15 +3,24 @@ zf2-snippster
 
 ZF2 Module to save prerendered heavy views as snippets to cache and lower the application response time on request
 
-todo
-=============
+## todo
 
 - [ ] tests
 - [ ] view helper
 - [ ] controller helper
 
-cache adapter
-=============
+## Quick start
+
+### Install via Composer
+In the `require` key of `composer.json` file add the following
+
+    "ins0/zf2-snippster": "dev-master"
+
+Run the Composer update command
+
+    $ composer update
+
+### cache adapter
 
 edit the module.config.php to set your pref. cache adapter snippster works great with redis or memcache
 
@@ -27,12 +36,11 @@ edit the module.config.php to set your pref. cache adapter snippster works great
         ),
     ),
 
-example
-=============
+## example
 
 create a zf2 console route and point a crontab to the route to pre generate all views that are used in your application
 
-**Generate Snippets**
+### Generate Snippets
 
 *config.module.php*
 
@@ -76,7 +84,7 @@ create a zf2 console route and point a crontab to the route to pre generate all 
         More heavy stuff to build this view
     </div>
 
-**Request Snippets**
+### Request Snippets
     
 controller request view snippet example
 
