@@ -1,0 +1,27 @@
+{
+    "name": "ins0/zf2-snippster",
+    "description": "ZF2 Snipped Module to generate heavy views as snippets and lower the application response time",
+    "keywords": ["php","zf2","cache","zend","zend-framework"],
+    "type": "library",
+    "license": "MIT",
+        "authors": [
+        {
+            "name": "Marco Rieger",
+            "homepage": "http://racecore.de/",
+            "email": "ins0@racecore.de"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*",
+        "zendframework/zendframework": "2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Snippster": "src"
+        },
+        "classmap": ["Module.php"]
+    }
+}
