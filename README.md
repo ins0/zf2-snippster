@@ -1,7 +1,7 @@
 zf2-snippster
 =============
 
-ZF2 Module to save prerendered heavy views as snippets to cache and lower the application response time on request
+ZF2 Module to save heavy views as prerendered snippets in cache and lower the application response time on request
 
 ## todo
 
